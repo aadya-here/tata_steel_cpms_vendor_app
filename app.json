@@ -2,6 +2,7 @@
   "expo": {
     "name": "cpms_vendor",
     "slug": "cpms_vendor",
+    "scheme": "cpms.vendor",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,10 +19,21 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.aadye.here.cpms_vendor"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "react-native-compressor",
+      "expo-router"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "daf27bda-4b86-45a1-88a0-b854a0fda00b"
+      }
     }
   }
 }
